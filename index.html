@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MC Pro Motor - Bengkel Motor Terpercaya di Bojonggede</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">MC Pro Motor</div>
+      <ul class="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Perbaikan Motor Cepat & Harga Jujur</h1>
+      <p>Bengkel terpercaya di Bojonggede sejak 2015. Teknisi berpengalaman, alat modern, dan pelayanan ramah.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="openBookingModal()">Booking Servis</button>
+        <a href="#layanan" class="btn-outline">Lihat Layanan</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://via.placeholder.com/600x400?text=MC+Pro+Motor" alt="MC Pro Motor" />
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="layanan" class="services">
+    <h2 class="section-title">Layanan Kami</h2>
+    <p class="section-subtitle">Kami siap membantu motor Anda kembali ngegas!</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon-bg"><i class="fas fa-tools"></i></div>
+        <h3>Perbaikan Mesin</h3>
+        <p>Perbaikan mesin dari ringan sampai overhauling, pakai alat digital.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-bg"><i class="fas fa-oil-can"></i></div>
+        <h3>Ganti Oli & Filter</h3>
+        <p>Oli berkualitas, ganti cepat, motor jadi lebih halus dan irit.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-bg"><i class="fas fa-car-battery"></i></div>
+        <h3>Elektronik Motor</h3>
+        <p>Perbaikan aki, kelistrikan, ECU, dan sistem starter.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-bg"><i class="fas fa-wrench"></i></div>
+        <h3>Servis Rutin</h3>
+        <p>Cocok untuk perawatan 1.000 km, 5.000 km, atau 10.000 km.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="tentang" class="about">
+    <div class="about-image">
+      <img src="https://via.placeholder.com/500x400?text=Tim+Teknisi" alt="Tim MC Pro Motor" />
+    </div>
+    <div class="about-content">
+      <h2>Tentang MC Pro Motor</h2>
+      <p>MC Pro Motor berdiri sejak 2015 di Bojonggede, Bogor. Kami fokus memberikan layanan perbaikan motor yang cepat, transparan, dan terjangkau.</p>
+      <p>Dengan teknisi berpengalaman dan alat modern, kami telah melayani banyak motor dan mendapat kepercayaan dari warga sekitar.</p>
+      <ul class="about-features">
+        <li>🔧 Teknisi Bersertifikasi</li>
+        <li>⏱️ Servis Cepat & On Time</li>
+        <li>💰 Harga Jujur, No Tipu</li>
+        <li>📞 Siap Bantu Darurat</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section id="galeri" class="gallery">
+    <h2 class="section-title">Hasil Perbaikan Kami</h2>
+    <p class="section-subtitle">Lihat perbedaan sebelum dan sesudah servis</p>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Sebelum+1" alt="Sebelum"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Sesudah+1" alt="Sesudah"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Sebelum+2" alt="Sebelum"></div>
+      <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Sesudah+2" alt="Sesudah"></div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="testimonials">
+    <h2 class="section-title">Testimoni Pelanggan</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Motor saya mogok di jalan, langsung dibawa ke sini. 3 jam selesai, harga jujur, teknisinya ramah banget!"</p>
+        <strong>— Budi, Bojonggede</strong>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p>"Sudah langganan 4 tahun. Pelayanannya cepat, motor saya selalu terawat. Pokoknya recommended!"</p>
+        <strong>— Rina, Citayam</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="contact">
+    <h2 class="section-title">Hubungi Kami</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Info Bengkel</h3>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong><br>
+          Komplek Ruko Perum.Darussalam<br>
+          Jl. Raya Bojong Gede, Waringin Jaya<br>
+          Bojonggede, Bogor 16320</p>
+        <p><i class="fas fa-phone"></i> <a href="https://wa.me/6281234567890">0812-3456-7890</a></p>
+        <p><i class="fas fa-clock"></i> <strong>Jam Buka:</strong><br>
+          Senin - Kamis: 08.00 - 18.00<br>
+          Sabtu: 08.00 - 18.00<br>
+          <span style="color:#e74c3c;">Jumat: Libur</span></p>
+      </div>
+      <div class="contact-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.234322333334!2d106.7939881!3d-6.5044044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c399202ac313%3A0xfc49ff3255731842!2sMC%20PRO%20BENGKEL%20MOTOR!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius:12px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+    <button class="btn-primary" onclick="openBookingModal()">Booking Servis Sekarang</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <h3>MC Pro Motor</h3>
+      <p>Bengkel motor terpercaya di Bojonggede, Bogor</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <p>&copy; 2025 MC Pro Motor</p>
+  </footer>
+
+  <!-- Modal Booking -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeBookingModal()">&times;</span>
+      <h2>Booking Servis</h2>
+      <form id="bookingForm">
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="tel" placeholder="No HP" required>
+        <select required>
+          <option value="">Pilih Layanan</option>
+          <option value="servis">Servis Rutin</option>
+          <option value="mesin">Perbaikan Mesin</option>
+          <option value="oli">Ganti Oli</option>
+          <option value="elektronik">Perbaikan Elektronik</option>
+        </select>
+        <input type="date" required>
+        <input type="time" required>
+        <button type="submit">Kirim Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/6281234567890?text=Halo%20MC%20Pro%20Motor,%20saya%20mau%20booking%20servis." class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn" title="Kembali ke Atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
