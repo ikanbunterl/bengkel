@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,136 +18,186 @@
       <div class="logo">MC Pro Motor</div>
       <ul class="nav-links">
         <li><a href="#home">Beranda</a></li>
-        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#layanan">Layanan & Harga</a></li>
         <li><a href="#tentang">Tentang</a></li>
         <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#cek-motor">Cek Motor</a></li>
         <li><a href="#kontak">Kontak</a></li>
       </ul>
-      <div class="burger">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="nav-icons">
+        <button id="darkModeToggle" class="dark-mode-btn">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="shareBtn" class="share-btn">
+          <i class="fas fa-share-alt"></i>
+        </button>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-content">
+    <div class="hero-content" data-aos="fade-right">
       <h1>Perbaikan Motor Cepat & Harga Jujur</h1>
-      <p>Bengkel terpercaya di Bojonggede sejak 2025. Teknisi berpengalaman, alat modern, dan pelayanan ramah.</p>
-      <div class="hero-buttons">
-        <button class="btn-primary" onclick="openBookingModal()">Booking Servis</button>
-        <a href="#layanan" class="btn-outline">Lihat Layanan</a>
+      <p>Bengkel terpercaya di Bojonggede sejak 2015. Teknisi berpengalaman, alat modern, dan pelayanan ramah.</p>
+      
+      <!-- CTA Baru -->
+      <div class="cta-bar">
+        <p><strong>Motor ngadat? Servis Sekarang – Cepat, Harga Jujur!</strong></p>
+        <div class="cta-buttons">
+          <a href="tel:083136545012" class="btn-primary"><i class="fas fa-phone"></i> Telepon</a>
+          <a href="https://wa.me/6283136545012?text=Halo%20MC%20Pro%20Motor,%20saya%20mau%20servis%20motor." class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="#kontak" class="btn-outline"><i class="fas fa-map-marker-alt"></i> Lihat Lokasi</a>
+        </div>
       </div>
     </div>
-    <div class="hero-image">
+    <div class="hero-image" data-aos="fade-left">
       <img src="LOGO MC MOTOR.jpg" alt="MC Pro Motor" />
     </div>
   </section>
 
-  <!-- Layanan -->
+  <!-- Layanan & Harga -->
   <section id="layanan" class="services">
-    <h2 class="section-title">Layanan Kami</h2>
-    <p class="section-subtitle">Kami siap membantu motor Anda kembali ngegas!</p>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="icon-bg"><i class="fas fa-tools"></i></div>
-        <h3>Perbaikan Mesin</h3>
-        <p>Perbaikan mesin dari ringan sampai overhauling, pakai alat digital.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon-bg"><i class="fas fa-oil-can"></i></div>
-        <h3>Ganti Oli & Filter</h3>
-        <p>Oli berkualitas, ganti cepat, motor jadi lebih halus dan irit.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon-bg"><i class="fas fa-car-battery"></i></div>
-        <h3>Elektronik Motor</h3>
-        <p>Perbaikan aki, kelistrikan, ECU, dan sistem starter.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon-bg"><i class="fas fa-wrench"></i></div>
+    <h2 class="section-title" data-aos="fade-up">Layanan & Harga Kami</h2>
+    <p class="section-subtitle" data-aos="fade-up">Harga transparan, tanpa biaya tersembunyi</p>
+    <div class="price-table" data-aos="fade-up">
+      <div class="price-card">
         <h3>Servis Rutin</h3>
-        <p>Cocok untuk perawatan 1.000 km, 5.000 km, atau 10.000 km.</p>
+        <ul>
+          <li><i class="fas fa-check"></i> Ganti Oli & Filter</li>
+          <li><i class="fas fa-check"></i> Cek Rem & Ban</li>
+          <li><i class="fas fa-check"></i> Cek Kelistrikan</li>
+        </ul>
+        <div class="price">Rp 80.000 - 120.000</div>
+      </div>
+      <div class="price-card">
+        <h3>Perbaikan Mesin</h3>
+        <ul>
+          <li><i class="fas fa-check"></i> Overhaul Ringan</li>
+          <li><i class="fas fa-check"></i> Ganti Piston/Set</li>
+          <li><i class="fas fa-check"></i> Servis Karburator</li>
+        </ul>
+        <div class="price">Rp 300.000 - 800.000</div>
+      </div>
+      <div class="price-card">
+        <h3>Elektronik Motor</h3>
+        <ul>
+          <li><i class="fas fa-check"></i> Perbaikan Aki</li>
+          <li><i class="fas fa-check"></i> Servis ECU</li>
+          <li><i class="fas fa-check"></i> Ganti CDI/Spull</li>
+        </ul>
+        <div class="price">Rp 150.000 - 500.000</div>
       </div>
     </div>
   </section>
 
   <!-- Tentang Kami -->
   <section id="tentang" class="about">
-    <div class="about-image">
+    <div class="about-image" data-aos="fade-right">
       <img src="https://via.placeholder.com/500x400?text=Tim+Teknisi" alt="Tim MC Pro Motor" />
     </div>
-    <div class="about-content">
+    <div class="about-content" data-aos="fade-left">
       <h2>Tentang MC Pro Motor</h2>
-      <p>MC Pro Motor berdiri sejak 2025 di Bojonggede, Bogor. Kami fokus memberikan layanan perbaikan motor yang cepat, transparan, dan terjangkau.</p>
+      <p>MC Pro Motor berdiri sejak 2015 di Bojonggede, Bogor. Kami fokus memberikan layanan perbaikan motor yang cepat, transparan, dan terjangkau.</p>
       <p>Dengan teknisi berpengalaman dan alat modern, kami telah melayani banyak motor dan mendapat kepercayaan dari warga sekitar.</p>
       <ul class="about-features">
-        <li>🔧 Teknisi Bersertifikasi</li>
-        <li>⏱️ Servis Cepat & On Time</li>
-        <li>💰 Harga Jujur, No Tipu</li>
-        <li>📞 Siap Bantu Darurat</li>
+        <li><i class="fas fa-check-circle"></i> Teknisi Bersertifikasi</li>
+        <li><i class="fas fa-check-circle"></i> Servis Cepat & On Time</li>
+        <li><i class="fas fa-check-circle"></i> Harga Jujur, No Tipu</li>
+        <li><i class="fas fa-check-circle"></i> Siap Bantu Darurat</li>
       </ul>
     </div>
   </section>
 
   <!-- Galeri -->
   <section id="galeri" class="gallery">
-    <h2 class="section-title">Hasil Perbaikan Kami</h2>
-    <p class="section-subtitle">Lihat perbedaan sebelum dan sesudah servis</p>
+    <h2 class="section-title" data-aos="fade-up">Hasil Perbaikan Kami</h2>
+    <p class="section-subtitle" data-aos="fade-up">Lihat perbedaan sebelum dan sesudah servis</p>
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Sebelum+1" alt="Sebelum"></div>
-      <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Sesudah+1" alt="Sesudah"></div>
-      <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Sebelum+2" alt="Sebelum"></div>
-      <div class="gallery-item"><img src="https://via.placeholder.com/300x200?text=Sesudah+2" alt="Sesudah"></div>
+      <div class="gallery-item" data-aos="zoom-in"><img src="https://via.placeholder.com/300x200?text=Sebelum+1" alt="Sebelum"></div>
+      <div class="gallery-item" data-aos="zoom-in"><img src="https://via.placeholder.com/300x200?text=Sesudah+1" alt="Sesudah"></div>
+      <div class="gallery-item" data-aos="zoom-in"><img src="https://via.placeholder.com/300x200?text=Sebelum+2" alt="Sebelum"></div>
+      <div class="gallery-item" data-aos="zoom-in"><img src="https://via.placeholder.com/300x200?text=Sesudah+2" alt="Sesudah"></div>
     </div>
   </section>
 
-  <!-- Testimoni -->
+  <!-- Testimoni Slider -->
   <section class="testimonials">
-    <h2 class="section-title">Testimoni Pelanggan</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial">
+    <h2 class="section-title" data-aos="fade-up">Apa Kata Pelanggan</h2>
+    <div class="testimonial-slider" data-aos="fade-up">
+      <div class="testimonial-slide active">
         <div class="stars">★★★★★</div>
         <p>"Motor saya mogok di jalan, langsung dibawa ke sini. 3 jam selesai, harga jujur, teknisinya ramah banget!"</p>
         <strong>— Budi, Bojonggede</strong>
       </div>
-      <div class="testimonial">
+      <div class="testimonial-slide">
         <div class="stars">★★★★★</div>
         <p>"Bengkel berkualitas menangani 2 Tak, 4 Tak, Motor Listrik, menangani tune up, modifikasi, restorasi, build motor cycle, MC PRO, PRofesional"</p>
         <strong>— Agus Danang</strong>
       </div>
-        <div class="testimonial">
+      <div class="testimonial-slide">
         <div class="stars">★★★★★</div>
         <p>"Keren banget hasilnya, tahapan demi tahapan dijelaskan dan diperlihatkan dengan baik... rekomended banget...."</p>
         <strong>— Buddy syaf</strong>
-        </div>
-        <div class="testimonial">
+      </div>
+      <div class="testimonial-slide">
         <div class="stars">★★★★★</div>
         <p>"Murmer,Professional...alat² lengkap gak kalah dg bengkel resmi...gak nyesel klw kemari buat servis motornya...semua merk motor..."</p>
         <strong>— wisnu dk</strong>
+      </div>
+    </div>
+    <div class="slider-nav">
+      <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+      <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- Cek Kondisi Motor -->
+  <section id="cek-motor" class="cek-motor">
+    <h2 class="section-title" data-aos="fade-up">Cek Kondisi Motor Gratis</h2>
+    <p class="section-subtitle" data-aos="fade-up">Jawab pertanyaan di bawah untuk mendapatkan estimasi masalah</p>
+    
+    <div class="cek-form" data-aos="fade-up">
+      <form id="motorCheckForm">
+        <div class="checkbox-group">
+          <label><input type="checkbox" value="mati"> Motor sering mati sendiri</label>
+          <label><input type="checkbox" value="suara"> Suara mesin kasar/aneh</label>
+          <label><input type="checkbox" value="rem"> Rem terasa blong/lemah</label>
+          <label><input type="checkbox" value="oli"> Kebocoran oli</label>
+          <label><input type="checkbox" value="starter"> Starter berat/mogok</label>
+          <label><input type="checkbox" value="lampu"> Lampu redup/mati</label>
         </div>
+        <button type="submit" class="btn-primary">Cek Sekarang</button>
+      </form>
+      
+      <div id="cekResult" class="cek-result">
+        <!-- Hasil akan muncul di sini -->
+      </div>
     </div>
   </section>
 
   <!-- Kontak -->
   <section id="kontak" class="contact">
-    <h2 class="section-title">Hubungi Kami</h2>
+    <h2 class="section-title" data-aos="fade-up">Hubungi Kami</h2>
     <div class="contact-container">
-      <div class="contact-info">
+      <div class="contact-info" data-aos="fade-right">
         <h3>Info Bengkel</h3>
         <p><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong><br>
           Komplek Ruko Perum.Darussalam<br>
           Jl. Raya Bojong Gede, Waringin Jaya<br>
           Bojonggede, Bogor 16320</p>
-        <p><i class="fas fa-phone"></i> <a href="https://wa.me/6283136545012">0831-3654-</a>5012</p>
+        <p><i class="fas fa-phone"></i> <a href="tel:083136545012">0831-3654-5012</a></p>
         <p><i class="fas fa-clock"></i> <strong>Jam Buka:</strong><br>
           Senin - Kamis: 08.00 - 18.00<br>
           Sabtu: 08.00 - 18.00<br>
           <span style="color:#e74c3c;">Jumat: Libur</span></p>
       </div>
-      <div class="contact-map">
+      <div class="contact-map" data-aos="fade-left">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.234322333334!2d106.7939881!3d-6.5044044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c399202ac313%3A0xfc49ff3255731842!2sMC%20PRO%20BENGKEL%20MOTOR!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
           width="100%" 
@@ -157,41 +209,19 @@
         </iframe>
       </div>
     </div>
-    <button class="btn-primary" onclick="openBookingModal()">Booking Servis Sekarang</button>
   </section>
 
-<footer>
-  <div class="footer-content">
-    <h3>MC Pro Motor</h3>
-    <p>Bengkel motor terpercaya di Bojonggede, Bogor</p>
-  </div>
-  <p>&copy; 2025 MC Pro Motor</p>
-</footer>
-
-  <!-- Modal Booking -->
-  <div id="bookingModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeBookingModal()">&times;</span>
-      <h2>Booking Servis</h2>
-      <form id="bookingForm">
-        <input type="text" placeholder="Nama Lengkap" required>
-        <input type="tel" placeholder="No HP" required>
-        <select required>
-          <option value="">Pilih Layanan</option>
-          <option value="servis">Servis Rutin</option>
-          <option value="mesin">Perbaikan Mesin</option>
-          <option value="oli">Ganti Oli</option>
-          <option value="elektronik">Perbaikan Elektronik</option>
-        </select>
-        <input type="date" required>
-        <input type="time" required>
-        <button type="submit">Kirim Booking</button>
-      </form>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <h3>MC Pro Motor</h3>
+      <p>Bengkel motor terpercaya di Bojonggede, Bogor</p>
     </div>
-  </div>
+    <p>&copy; 2025 MC Pro Motor</p>
+  </footer>
 
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/6283136545012?text=Halo%20MC%20Pro%20Motor,%20saya%20mau%20booking%20servis." class="whatsapp-btn" target="_blank">
+  <a href="https://wa.me/6283136545012?text=Halo%20MC%20Pro%20Motor,%20saya%20mau%20servis%20motor." class="whatsapp-btn" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
@@ -200,9 +230,14 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
